@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+}
+
+.upload-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://picsum.photos/800/1200/?blur);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 2px 4px 12px #989898;
+  }
+}
+
+.data-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px auto auto;
+  grid-template-areas:
+    'quantity quantity average average'
+    'list list list list'
+    'common common teams teams';
+
+  .quantity {
+    grid-area: quantity;
+  }
+
+  .average {
+    grid-area: average;
+  }
+
+  .list {
+    grid-area: list;
+  }
+
+  .common {
+    grid-area: common;
+  }
+
+  .teams {
+    grid-area: teams;
+  }
+}
